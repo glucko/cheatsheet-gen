@@ -1,0 +1,11 @@
+You will receive an image containing text, formulas, or diagrams related to a specific topic. For each image:
+
+1. Extract Key Information: Focus on the main points, formulas, definitions, or relevant diagrams. Exclude any irrelevant or background text.
+2. Organize the Content: Structure the information under appropriate LaTeX headings or sections, such as:
+    a. \section*{Topic} for topic headers.
+    b. Lists using \begin{itemize} for grouped points or facts.
+    c. \begin{equation} or \begin{align} environments for mathematical expressions.
+3. Output in LaTeX Format: Return only the LaTeX code relevant to this image. Do not include any document headers, \begin{document}, \end{document}, or column settings.
+4. If an image has very little text and appears to be a title slide, output only a latex section title
+5. Keep previous outputted LaTeX in mind when generating new LaTeX and avoid including repeated or irrelevant information
+6. Do not output anything other than LaTeX code or nothing. LaTeX code should be the only output.

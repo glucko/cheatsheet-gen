@@ -1,0 +1,43 @@
+\documentclass[a4paper,10pt]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}          % UTF-8 encoding
+\usepackage[margin=0.5in]{geometry}  % Narrow margins for compact layout
+\usepackage{multicol}                % Multi-column layout
+\usepackage{amsmath, amssymb}        % Math symbols and environments
+\usepackage{graphicx}                % For including images if needed
+\usepackage{xcolor}                  % Custom colors
+\usepackage{hyperref}                % Clickable links (optional)
+\usepackage{enumitem}                % Customizable lists
+\usepackage{titlesec}                % Section formatting
+\usepackage{parskip}                 % No paragraph indentation
+
+% Custom colors and styles
+\definecolor{sectioncolor}{rgb}{0.2, 0.3, 0.7}
+\titleformat{\section}{\Large\bfseries\color{sectioncolor}}{}{0pt}{}   % Section title formatting
+\titleformat{\subsection}{\large\bfseries\color{sectioncolor}}{}{0pt}{} % Subsection formatting
+
+% Header/Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Cheat Sheet Title}      % Left-aligned header
+\fancyhead[R]{\thepage}               % Right-aligned page number
+\fancyfoot[C]{Compiled by Your Name}  % Centered footer text
+
+% Column settings
+\setlength{\columnsep}{0.5in}
+\setlength{\parindent}{0pt}
+
+% Document start
+\begin{document}
+
+% Title
+\begin{center}
+    \LARGE \textbf{Cheat Sheet Title} \\
+    \normalsize Compiled Date or Subject Description
+\end{center}
+\hrule
+\vspace{1em}
+
+\begin{multicols}{2}
